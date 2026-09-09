@@ -1,0 +1,86 @@
+.app {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  gap: 2rem;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.form-panel,
+.cv-preview {
+  border-radius: 12px;
+}
+
+.form-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.cv-preview {
+  min-height: 800px;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgb(15 23 42 / 12%);
+}
+
+.cv-preview section + section {
+  margin-top: 2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0f172a;
+  font: inherit;
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+  border-color: #2563eb;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 800px) {
+  .app {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .cv-preview {
+    min-height: 600px;
+    padding: 1.5rem;
+  }
+}

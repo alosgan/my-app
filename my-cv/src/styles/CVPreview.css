@@ -1,0 +1,16 @@
+.cv-preview h1,
+.cv-preview h2,
+.cv-preview h3 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.cv-preview h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #2563eb;
+}
+
+.cv-preview p {
+  margin: 0.35rem 0;
+}

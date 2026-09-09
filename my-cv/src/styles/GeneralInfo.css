@@ -1,0 +1,14 @@
+.general-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.general-info label,
+.education label,
+.experience label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
